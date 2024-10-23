@@ -30,8 +30,10 @@
 <body>
 
     <div id="buttonContainer">
-        <button id="launchButton">Start Game</button>
-        <button id="otherButton">Other Action</button>
+        <button id="launchButton">Drive Mad</button>
+        <button id="otherButton">Retro Bowl College</button>
+          <button id="TinyFishing">Tiny Fishing</button>
+          <button id="StickmanHook">Stickman Hook</button>
     </div>
 
     <script>
@@ -42,6 +44,15 @@
         document.getElementById('otherButton').addEventListener('click', function() {
             window.location.href = '/retrobowl/index.html'; // Replace with the path for the other action
         });
+
+        document.getElementById('TinyFishing').addEventListener('click', function() {
+            window.location.href = '/tinyfishing/index.html'; // Replace with the path to your HTML file
+        });
+
+        document.getElementById('StickmanHook').addEventListener('click', function() {
+            window.location.href = '/stickmanhook/index.html'; // Replace with the path to your HTML file
+        });
+
     </script>
 
 </body>
