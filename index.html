@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Launcher</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #buttonContainer {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="buttonContainer">
+        <button id="launchButton">Start Game</button>
+        <button id="otherButton">Other Action</button>
+    </div>
+
+    <script>
+        document.getElementById('launchButton').addEventListener('click', function() {
+            window.location.href = '/drivemad/index.html'; // Replace with the path to your HTML file
+        });
+
+        document.getElementById('otherButton').addEventListener('click', function() {
+            window.location.href = '/retrobowl/index.html'; // Replace with the path for the other action
+        });
+    </script>
+
+</body>
+</html>
